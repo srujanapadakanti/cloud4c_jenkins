@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: srujana-appweb
+  name: srujana-appweb
+  namespace: srujana-final-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: srujana-appweb
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: srujana-appweb
+    spec:
+      containers:
+      - image: dockerashu/srujanaweb:sec-check16
+        name: srujanaweb
+        ports:
+        - containerPort: 80
+        resources: {}
+status: {}
