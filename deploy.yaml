@@ -19,7 +19,7 @@ spec:
         app: srujana-appweb
     spec:
       containers:
-      - image: dockerashu/srujanaweb:sec-check16
+      - image: dockerashu/srujanaweb:sec-check19
         name: srujanaweb
         ports:
         - containerPort: 80
